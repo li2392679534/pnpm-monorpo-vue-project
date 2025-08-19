@@ -5,11 +5,19 @@
   "private": true,
   "scripts": {
     "dev": "pnpm -r --parallel dev",
+    "dev:admin": "pnpm --filter @monorepo/admin dev",
+    "dev:web": "pnpm --filter @monorepo/web dev",
+    "dev:ui": "pnpm --filter @monorepo/ui dev",
+    "dev:utils": "pnpm --filter @monorepo/utils dev",
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
     "clean": "pnpm -r clean",
     "install:all": "pnpm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/li2392679534/pnpm-monorpo-vue-project.git"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
