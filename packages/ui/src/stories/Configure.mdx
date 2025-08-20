@@ -1,5 +1,4 @@
 import { Meta } from "@storybook/addon-docs/blocks";
-
 import Github from "./assets/github.svg";
 import Discord from "./assets/discord.svg";
 import Youtube from "./assets/youtube.svg";
@@ -14,6 +13,7 @@ import Testing from "./assets/testing.png";
 import Accessibility from "./assets/accessibility.png";
 import Theming from "./assets/theming.png";
 import AddonLibrary from "./assets/addon-library.png";
+
 
 export const RightArrow = () => <svg 
     viewBox="0 0 14 14" 
@@ -35,9 +35,8 @@ export const RightArrow = () => <svg
 
 <div className="sb-container">
   <div className='sb-section-title'>
-    # Configure your project
-
-    Because Storybook works separately from your app, you'll need to configure it for your specific stack and setup. Below, explore guides for configuring Storybook with popular frameworks and tools. If you get stuck, learn how you can ask for help from our community.
+    # 配置你的项目
+由于Storybook是独立于你的应用程序运行的，你需要根据自己特定的技术栈和设置对其进行配置。下面，你可以查看关于如何将Storybook与主流框架和工具进行配置的指南。如果遇到困难，了解一下如何向我们的社区寻求帮助。
   </div>
   <div className="sb-section">
     <div className="sb-section-item">
@@ -46,7 +45,7 @@ export const RightArrow = () => <svg
         alt="A wall of logos representing different styling technologies"
       />
       <h4 className="sb-section-item-heading">Add styling and CSS</h4>
-      <p className="sb-section-item-paragraph">Like with web applications, there are many ways to include CSS within Storybook. Learn more about setting up styling within Storybook.</p>
+      <p className="sb-section-item-paragraph">和Web应用一样，在Storybook中添加CSS的方法有很多。了解有关在Storybook中设置样式的更多信息。</p>
       <a
         href="https://storybook.js.org/docs/configure/styling-and-css/?renderer=vue"
         target="_blank"
@@ -58,7 +57,7 @@ export const RightArrow = () => <svg
         alt="An abstraction representing the composition of data for a component"
       />
       <h4 className="sb-section-item-heading">Provide context and mocking</h4>
-      <p className="sb-section-item-paragraph">Often when a story doesn't render, it's because your component is expecting a specific environment or context (like a theme provider) to be available.</p>
+      <p className="sb-section-item-paragraph">通常，当story不渲染时，是因为你的组件需要特定的环境或上下文（比如theme provider）来可用。</p>
       <a
         href="https://storybook.js.org/docs/writing-stories/decorators/?renderer=vue#context-for-mocking"
         target="_blank"
@@ -68,9 +67,7 @@ export const RightArrow = () => <svg
       <img src={Assets} alt="A representation of typography and image assets" />
       <div>
         <h4 className="sb-section-item-heading">Load assets and resources</h4>
-        <p className="sb-section-item-paragraph">To link static files (like fonts) to your projects and stories, use the
-        `staticDirs` configuration option to specify folders to load when
-        starting Storybook.</p>
+        <p className="sb-section-item-paragraph">要链接静态文件（如字体）到你的项目和故事，使用`staticDirs`配置选项来指定在启动Storybook时加载的文件夹。</p>
         <a
           href="https://storybook.js.org/docs/configure/images-and-assets/?renderer=vue"
           target="_blank"
@@ -81,9 +78,9 @@ export const RightArrow = () => <svg
 </div>
 <div className="sb-container">
   <div className='sb-section-title'>
-    # Do more with Storybook
+    # 使用Storybook做更多的事情
 
-    Now that you know the basics, let's explore other parts of Storybook that will improve your experience. This list is just to get you started. You can customise Storybook in many ways to fit your needs.
+    现在你已经了解了基础知识，让我们探索Storybook的其他部分，这些部分将改善你的体验。这个列表只是为了让你开始。你可以通过多种方式自定义Storybook以满足你的需求。
   </div>
 
   <div className="sb-section">
@@ -91,8 +88,7 @@ export const RightArrow = () => <svg
       <div className="sb-grid-item">
         <img src={Docs} alt="A screenshot showing the autodocs tag being set, pointing a docs page being generated" />
         <h4 className="sb-section-item-heading">Autodocs</h4>
-        <p className="sb-section-item-paragraph">Auto-generate living,
-          interactive reference documentation from your components and stories.</p>
+        <p className="sb-section-item-paragraph">自动生成交互式参考文档，从你的组件和故事中生成。</p>
         <a
           href="https://storybook.js.org/docs/writing-docs/autodocs/?renderer=vue"
           target="_blank"
@@ -101,7 +97,7 @@ export const RightArrow = () => <svg
       <div className="sb-grid-item">
         <img src={Share} alt="A browser window showing a Storybook being published to a chromatic.com URL" />
         <h4 className="sb-section-item-heading">Publish to Chromatic</h4>
-        <p className="sb-section-item-paragraph">Publish your Storybook to review and collaborate with your entire team.</p>
+        <p className="sb-section-item-paragraph">将你的Storybook发布到Chromatic，以便你的整个团队可以查看和协作。</p>
         <a
           href="https://storybook.js.org/docs/sharing/publish-storybook/?renderer=vue#publish-storybook-with-chromatic"
           target="_blank"
@@ -110,8 +106,7 @@ export const RightArrow = () => <svg
       <div className="sb-grid-item">
         <img src={FigmaPlugin} alt="Windows showing the Storybook plugin in Figma" />
         <h4 className="sb-section-item-heading">Figma Plugin</h4>
-        <p className="sb-section-item-paragraph">Embed your stories into Figma to cross-reference the design and live
-          implementation in one place.</p>
+        <p className="sb-section-item-paragraph">将你的故事嵌入到Figma中，以便在同一个地方交叉参考设计和实时实现。</p>
         <a
           href="https://storybook.js.org/docs/sharing/design-integrations/?renderer=vue#embed-storybook-in-figma-with-the-plugin"
           target="_blank"
@@ -120,8 +115,7 @@ export const RightArrow = () => <svg
       <div className="sb-grid-item">
         <img src={Testing} alt="Screenshot of tests passing and failing" />
         <h4 className="sb-section-item-heading">Testing</h4>
-        <p className="sb-section-item-paragraph">Use stories to test a component in all its variations, no matter how
-          complex.</p>
+        <p className="sb-section-item-paragraph">使用故事来测试组件的所有变体，无论多么复杂。</p>
         <a
           href="https://storybook.js.org/docs/writing-tests/?renderer=vue"
           target="_blank"
@@ -130,7 +124,7 @@ export const RightArrow = () => <svg
       <div className="sb-grid-item">
         <img src={Accessibility} alt="Screenshot of accessibility tests passing and failing" />
         <h4 className="sb-section-item-heading">Accessibility</h4>
-        <p className="sb-section-item-paragraph">Automatically test your components for a11y issues as you develop.</p>
+        <p className="sb-section-item-paragraph">在开发过程中自动测试你的组件的a11y问题。</p>
         <a
           href="https://storybook.js.org/docs/writing-tests/accessibility-testing/?renderer=vue"
           target="_blank"
@@ -139,7 +133,7 @@ export const RightArrow = () => <svg
       <div className="sb-grid-item">
         <img src={Theming} alt="Screenshot of Storybook in light and dark mode" />
         <h4 className="sb-section-item-heading">Theming</h4>
-        <p className="sb-section-item-paragraph">Theme Storybook's UI to personalize it to your project.</p>
+        <p className="sb-section-item-paragraph">为你的项目个性化Storybook的UI。</p>
         <a
           href="https://storybook.js.org/docs/configure/theming/?renderer=vue"
           target="_blank"
@@ -151,7 +145,7 @@ export const RightArrow = () => <svg
 <div className='sb-addon'>
   <div className='sb-addon-text'>
     <h4>Addons</h4>
-    <p className="sb-section-item-paragraph">Integrate your tools with Storybook to connect workflows.</p>
+    <p className="sb-section-item-paragraph">将你的工具与Storybook集成，以连接工作流。</p>
     <a
         href="https://storybook.js.org/addons/"
         target="_blank"
@@ -165,7 +159,7 @@ export const RightArrow = () => <svg
 <div className="sb-section sb-socials">
     <div className="sb-section-item">
       <img src={Github} alt="Github logo" className="sb-explore-image"/>
-      Join our contributors building the future of UI development.
+      加入我们的贡献者，共同构建UI开发的未来。
 
       <a
         href="https://github.com/storybookjs/storybook"
@@ -175,7 +169,7 @@ export const RightArrow = () => <svg
     <div className="sb-section-item">
       <img src={Discord} alt="Discord logo" className="sb-explore-image"/>
       <div>
-        Get support and chat with frontend developers.
+        获取支持并与前端开发者聊天。
 
         <a
           href="https://discord.gg/storybook"
@@ -186,7 +180,7 @@ export const RightArrow = () => <svg
     <div className="sb-section-item">
       <img src={Youtube} alt="Youtube logo" className="sb-explore-image"/>
       <div>
-        Watch tutorials, feature previews and interviews.
+        观看教程、功能预览和访谈。
 
         <a
           href="https://www.youtube.com/@chromaticui"
@@ -196,7 +190,7 @@ export const RightArrow = () => <svg
     </div>
     <div className="sb-section-item">
       <img src={Tutorials} alt="A book" className="sb-explore-image"/>
-      <p>Follow guided walkthroughs on for key workflows.</p>
+      <p>跟随引导，了解关键工作流。</p>
 
       <a
           href="https://storybook.js.org/tutorials/"

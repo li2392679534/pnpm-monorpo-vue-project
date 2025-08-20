@@ -55,3 +55,10 @@ export const Small: Story = {
     size: 'small',
   },
 };
+
+export const HowlongTest: Story = {
+  args: {
+    primary: false,
+    label: "Button"
+  }
+};
