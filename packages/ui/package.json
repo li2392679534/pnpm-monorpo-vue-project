@@ -7,16 +7,16 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
     "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
-    "storybook": "storybook dev -p 6006",
+    "ui:dev": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {

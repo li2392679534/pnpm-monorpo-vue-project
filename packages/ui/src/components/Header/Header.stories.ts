@@ -9,7 +9,6 @@ const meta = {
    * See https://storybook.js.org/docs/configure/#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Example/Header',
   component: MyHeader,
   render: (args: any) => ({
     components: { MyHeader },

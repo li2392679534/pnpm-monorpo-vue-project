@@ -1,3 +1,4 @@
+// CSF
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 import { fn } from 'storybook/test';
@@ -5,8 +6,10 @@ import { fn } from 'storybook/test';
 import Button from './Button.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
+// 默认导出元数据控制 Storybook 如何列出你的故事并提供插件使用的信息
 const meta = {
-  title: 'Example/Button',
+  // 唯一的，可用/进行嵌套结构，CSF3.0后是可选的，可根据文件结构自行推断
+  title: 'Test/Button',
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
@@ -58,7 +61,12 @@ export const Small: Story = {
 
 export const HowlongTest: Story = {
   args: {
-    primary: false,
-    label: "Button"
+    backgroundColor: '#172654',
+    'size':'large',
+    primary: true,
+    label: "HowLong Test",
+    onClick: () => {
+      alert("HowlongTest");
+    }
   }
 };
